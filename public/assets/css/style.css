@@ -1,0 +1,25 @@
+html,
+body {
+	height: 100%;	
+}
+
+body {
+	background: hsl( 210, 90%, 70% );
+	overflow: hidden;
+}
+
+canvas {
+    display: block;	
+    position: absolute;
+    top: -50vh;
+      
+}
+
+#fill-canvas {
+    position: absolute;
+    bottom: 0;
+    background-color: hsl(210,90%,59%);
+
+    height: 50vh;
+    width: 100vw;
+}
