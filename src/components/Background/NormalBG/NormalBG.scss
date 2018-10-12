@@ -1,0 +1,65 @@
+#fill-canvas {
+    position: absolute;
+    bottom: 0;
+    background-color: hsl(210,90%,59%);
+
+    height: 50vh;
+    width: 100vw;
+}
+
+.flowers {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+
+    .flower {
+        position: absolute;
+        opacity: .35;
+    }
+
+    .sm {
+        height: 100px;
+        width: 100px;
+    }
+    .md {
+        height: 200px;
+        width: 200px;
+    }
+    .lg {
+        height: 300px;
+        width: 300px;
+    }
+}
+
+#flower-1 {
+    top: 20vh;
+    left: 35vw;
+}
+#flower-2 {
+    top: 20vh;
+    left: 75vw;
+}
+#flower-3 {
+    top: 18vh;
+    left: 5vw;
+}
+#flower-4 {
+    top: 20vh;
+    left: 65vw;
+}
+#flower-5 {
+    top: 55vh;
+    left: 15vw;
+}
+#flower-6 {
+    top: 35vh;
+    left: 65vw;
+}
+#flower-7 {
+    top: 65vh;
+    left: 85vw;
+}
+#flower-8 {
+    top: 40vh;
+    left: 40vw;
+}
