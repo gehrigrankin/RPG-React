@@ -6,25 +6,49 @@ import Menu from './components/Menu'
 
 class App extends Component {
   state = {
-    menu: true
-    
+    menu: true,
+    background: "basic",
+    selected: "spongebob",
+    characters: [
+      {
+        name: "spongebob",
+        selected: true
+      },
+      {
+        name: "patrick",
+        selected: false
+      },
+      {
+        name: "squidward",
+        selected: false
+      },
+      {
+        name: "sandy",
+        selected: false
+      }
+    ]
   }
 
   start = () => {
-    this.setState(() => {
-
+    this.setState({
+      menu: false,
     })
   }
 
   componentDidMount() {
-    this.start();
+
   }
 
   render() {
     return (
       <div className="App">
         <Background />
-        { this.state.menu ? <Menu/> : null }
+        { this.state.menu ? 
+            <Menu 
+              start={this.start }
+              characters={this.state.characters}
+              selected={this.state.selected}
+            /> : null }
       </div>
     );
   }
