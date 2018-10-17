@@ -7,6 +7,8 @@ import orange from '../../../images/flowers/orange-flower.png'
 import pink from '../../../images/flowers/pink-flower.png'
 import yellow from '../../../images/flowers/yellow-flower.png'
 
+import grass from '../../../images/grass.png'
+
 const NormalBG = () => {
   return (
     <div className='NormalBG'>
@@ -20,6 +22,9 @@ const NormalBG = () => {
         <img id="flower-6" className="flower lg pink" src={pink} alt="pink-flower"></img>
         <img id="flower-7" className="flower sm yellow" src={yellow} alt="yellow-flower"></img>
         <img id="flower-8" className="flower md yellow" src={yellow} alt="yellow-flower"></img>
+      </div>
+      <div className="grass">
+        <img src={grass} alt="grass"/>
       </div>
     </div>
   )
